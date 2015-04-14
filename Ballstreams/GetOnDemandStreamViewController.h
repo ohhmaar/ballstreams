@@ -11,6 +11,8 @@
 @interface GetOnDemandStreamViewController : UIViewController
 
 
+@property (weak, nonatomic) IBOutlet UILabel *homeTeam;
+@property (weak, nonatomic) IBOutlet UILabel *awayTeam;
 - (IBAction)playGame:(id)sender;
 @property (nonatomic, strong) NSString *streamID;
 

@@ -57,7 +57,9 @@
             [self.tableView reloadData];
         });
         
-        NSLog(@"%@", liveGames);
+        if ([liveGames[0][@"isPlaying"] isEqualToNumber:@1]) {
+            NSLog(@"hello");
+        }
     }];
     
 }
@@ -89,7 +91,19 @@
     cell.gameTimeLabel.text = [NSString stringWithFormat:@"%@", liveGames[indexPath.row][@"startTime"]];
     cell.feedType.text = [NSString stringWithFormat:@"%@", liveGames[indexPath.row][@"feedType"]];
     
-    
+    if ([liveGames[indexPath.row][@"isPlaying"] isEqualToNumber:@0]) {
+        
+            cell.awayTeamLabel.textColor = [UIColor colorWithRed:175/255.0 green:194/255.0 blue:213/255.0 alpha:1];
+            cell.homeTeamLabel.textColor = [UIColor colorWithRed:175/255.0 green:194/255.0 blue:213/255.0 alpha:1];
+            cell.gameTimeLabel.textColor = [UIColor colorWithRed:175/255.0 green:194/255.0 blue:213/255.0 alpha:1];
+            cell.feedType.textColor = [UIColor colorWithRed:175/255.0 green:194/255.0 blue:213/255.0 alpha:1];
+    } else {
+        cell.awayTeamLabel.textColor = [UIColor blackColor];
+        cell.homeTeamLabel.textColor = [UIColor blackColor];
+        cell.gameTimeLabel.textColor = [UIColor blackColor];
+        cell.feedType.textColor = [UIColor blackColor];
+
+    }
     
     return cell;
 }

@@ -56,13 +56,20 @@
 
 - (IBAction)playGame:(id)sender {
     
-    AVAudioSession *session = [AVAudioSession sharedInstance];
-    [session setCategory:AVAudioSessionCategoryPlayback error:nil];        MPMoviePlayerViewController *moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL URLWithString:gameSource]];
-    [moviePlayer.moviePlayer prepareToPlay];
-    moviePlayer.moviePlayer.controlStyle = MPMovieControlStyleFullscreen;
-    [moviePlayer.view setFrame:moviePlayer.moviePlayer.view.bounds];
-    [moviePlayer.moviePlayer play];
+    if (gameSource) {
     
-    [self presentMoviePlayerViewControllerAnimated:moviePlayer];
+            AVAudioSession *session = [AVAudioSession sharedInstance];
+            [session setCategory:AVAudioSessionCategoryPlayback error:nil];        MPMoviePlayerViewController *moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL URLWithString:gameSource]];
+            [moviePlayer.moviePlayer prepareToPlay];
+            moviePlayer.moviePlayer.controlStyle = MPMovieControlStyleFullscreen;
+            [moviePlayer.view setFrame:moviePlayer.moviePlayer.view.bounds];
+            [moviePlayer.moviePlayer play];
+            
+            [self presentMoviePlayerViewControllerAnimated:moviePlayer];
+        
+    }
+    else {
+        NSLog(@"No LINK");
+    }
 }
 @end
