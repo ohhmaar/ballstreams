@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0741946E1AC3168F00D1B2F4 /* OnDemandDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0741946D1AC3168F00D1B2F4 /* OnDemandDatePicker.m */; };
 		074194711AC3179C00D1B2F4 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074194701AC3179C00D1B2F4 /* DatePickerViewController.m */; };
+		0774F8F91ADA55B000FEF703 /* BallstreamsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0774F8F81ADA55B000FEF703 /* BallstreamsModel.m */; };
 		07930B001A1EA0F400FECA5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07930AFF1A1EA0F400FECA5C /* main.m */; };
 		07930B031A1EA0F400FECA5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07930B021A1EA0F400FECA5C /* AppDelegate.m */; };
 		07930B061A1EA0F400FECA5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07930B051A1EA0F400FECA5C /* ViewController.m */; };
@@ -16,11 +17,11 @@
 		07930B0B1A1EA0F400FECA5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07930B0A1A1EA0F400FECA5C /* Images.xcassets */; };
 		07930B0E1A1EA0F400FECA5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07930B0C1A1EA0F400FECA5C /* LaunchScreen.xib */; };
 		07930B1A1A1EA0F400FECA5C /* BallstreamsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07930B191A1EA0F400FECA5C /* BallstreamsTests.m */; };
-		07F6BCEA1A2022C900EDD044 /* BasketballGamesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F6BCE91A2022C900EDD044 /* BasketballGamesTVC.m */; };
+		07F6BCEA1A2022C900EDD044 /* GetOnDemandTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F6BCE91A2022C900EDD044 /* GetOnDemandTableViewController.m */; };
 		07F6BCEF1A227E7D00EDD044 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F6BCEE1A227E7D00EDD044 /* MediaPlayer.framework */; };
-		07F6BCF31A22D89000EDD044 /* GameDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F6BCF21A22D89000EDD044 /* GameDetailViewController.m */; };
-		07F6BCF61A25DEB600EDD044 /* LiveStreamBasketballGamesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F6BCF51A25DEB600EDD044 /* LiveStreamBasketballGamesTVC.m */; };
-		07F6BCF91A26B5FC00EDD044 /* LiveGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F6BCF81A26B5FC00EDD044 /* LiveGameVC.m */; };
+		07F6BCF31A22D89000EDD044 /* GetOnDemandStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F6BCF21A22D89000EDD044 /* GetOnDemandStreamViewController.m */; };
+		07F6BCF61A25DEB600EDD044 /* GetLiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F6BCF51A25DEB600EDD044 /* GetLiveTableViewController.m */; };
+		07F6BCF91A26B5FC00EDD044 /* GetLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F6BCF81A26B5FC00EDD044 /* GetLiveViewController.m */; };
 		07F6BCFD1A2723AD00EDD044 /* GameInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F6BCFB1A2723AD00EDD044 /* GameInfoTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,8 @@
 		0741946D1AC3168F00D1B2F4 /* OnDemandDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnDemandDatePicker.m; sourceTree = "<group>"; };
 		0741946F1AC3179C00D1B2F4 /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
 		074194701AC3179C00D1B2F4 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+		0774F8F71ADA55B000FEF703 /* BallstreamsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallstreamsModel.h; sourceTree = "<group>"; };
+		0774F8F81ADA55B000FEF703 /* BallstreamsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallstreamsModel.m; sourceTree = "<group>"; };
 		07930AFA1A1EA0F400FECA5C /* Ballstreams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ballstreams.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07930AFE1A1EA0F400FECA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07930AFF1A1EA0F400FECA5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,16 +55,16 @@
 		07930B131A1EA0F400FECA5C /* BallstreamsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallstreamsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07930B181A1EA0F400FECA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07930B191A1EA0F400FECA5C /* BallstreamsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BallstreamsTests.m; sourceTree = "<group>"; };
-		07F6BCE81A2022C900EDD044 /* BasketballGamesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasketballGamesTVC.h; sourceTree = "<group>"; };
-		07F6BCE91A2022C900EDD044 /* BasketballGamesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasketballGamesTVC.m; sourceTree = "<group>"; };
+		07F6BCE81A2022C900EDD044 /* GetOnDemandTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetOnDemandTableViewController.h; sourceTree = "<group>"; };
+		07F6BCE91A2022C900EDD044 /* GetOnDemandTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetOnDemandTableViewController.m; sourceTree = "<group>"; };
 		07F6BCEE1A227E7D00EDD044 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		07F6BCF01A2281DE00EDD044 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		07F6BCF11A22D89000EDD044 /* GameDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDetailViewController.h; sourceTree = "<group>"; };
-		07F6BCF21A22D89000EDD044 /* GameDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDetailViewController.m; sourceTree = "<group>"; };
-		07F6BCF41A25DEB600EDD044 /* LiveStreamBasketballGamesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveStreamBasketballGamesTVC.h; sourceTree = "<group>"; };
-		07F6BCF51A25DEB600EDD044 /* LiveStreamBasketballGamesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveStreamBasketballGamesTVC.m; sourceTree = "<group>"; };
-		07F6BCF71A26B5FC00EDD044 /* LiveGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveGameVC.h; sourceTree = "<group>"; };
-		07F6BCF81A26B5FC00EDD044 /* LiveGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveGameVC.m; sourceTree = "<group>"; };
+		07F6BCF11A22D89000EDD044 /* GetOnDemandStreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetOnDemandStreamViewController.h; sourceTree = "<group>"; };
+		07F6BCF21A22D89000EDD044 /* GetOnDemandStreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetOnDemandStreamViewController.m; sourceTree = "<group>"; };
+		07F6BCF41A25DEB600EDD044 /* GetLiveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetLiveTableViewController.h; sourceTree = "<group>"; };
+		07F6BCF51A25DEB600EDD044 /* GetLiveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetLiveTableViewController.m; sourceTree = "<group>"; };
+		07F6BCF71A26B5FC00EDD044 /* GetLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetLiveViewController.h; sourceTree = "<group>"; };
+		07F6BCF81A26B5FC00EDD044 /* GetLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetLiveViewController.m; sourceTree = "<group>"; };
 		07F6BCFA1A2723AD00EDD044 /* GameInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameInfoTableViewCell.h; sourceTree = "<group>"; };
 		07F6BCFB1A2723AD00EDD044 /* GameInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameInfoTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +88,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0774F8FA1ADBDF6F00FEF703 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0774F8F71ADA55B000FEF703 /* BallstreamsModel.h */,
+				0774F8F81ADA55B000FEF703 /* BallstreamsModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0774F8FB1ADBDF8300FEF703 /* GetLive */ = {
+			isa = PBXGroup;
+			children = (
+				07F6BCF71A26B5FC00EDD044 /* GetLiveViewController.h */,
+				07F6BCF81A26B5FC00EDD044 /* GetLiveViewController.m */,
+				07F6BCF41A25DEB600EDD044 /* GetLiveTableViewController.h */,
+				07F6BCF51A25DEB600EDD044 /* GetLiveTableViewController.m */,
+			);
+			name = GetLive;
+			sourceTree = "<group>";
+		};
+		0774F8FC1ADBE0D400FEF703 /* GetOnDemand */ = {
+			isa = PBXGroup;
+			children = (
+				07F6BCE81A2022C900EDD044 /* GetOnDemandTableViewController.h */,
+				07F6BCE91A2022C900EDD044 /* GetOnDemandTableViewController.m */,
+				07F6BCF11A22D89000EDD044 /* GetOnDemandStreamViewController.h */,
+				07F6BCF21A22D89000EDD044 /* GetOnDemandStreamViewController.m */,
+			);
+			name = GetOnDemand;
+			sourceTree = "<group>";
+		};
 		07930AF11A1EA0F400FECA5C = {
 			isa = PBXGroup;
 			children = (
@@ -117,16 +151,11 @@
 				074194701AC3179C00D1B2F4 /* DatePickerViewController.m */,
 				0741946C1AC3168F00D1B2F4 /* OnDemandDatePicker.h */,
 				0741946D1AC3168F00D1B2F4 /* OnDemandDatePicker.m */,
-				07F6BCF71A26B5FC00EDD044 /* LiveGameVC.h */,
-				07F6BCF81A26B5FC00EDD044 /* LiveGameVC.m */,
-				07F6BCF41A25DEB600EDD044 /* LiveStreamBasketballGamesTVC.h */,
-				07F6BCF51A25DEB600EDD044 /* LiveStreamBasketballGamesTVC.m */,
 				07F6BCFA1A2723AD00EDD044 /* GameInfoTableViewCell.h */,
 				07F6BCFB1A2723AD00EDD044 /* GameInfoTableViewCell.m */,
-				07F6BCE81A2022C900EDD044 /* BasketballGamesTVC.h */,
-				07F6BCE91A2022C900EDD044 /* BasketballGamesTVC.m */,
-				07F6BCF11A22D89000EDD044 /* GameDetailViewController.h */,
-				07F6BCF21A22D89000EDD044 /* GameDetailViewController.m */,
+				0774F8FB1ADBDF8300FEF703 /* GetLive */,
+				0774F8FA1ADBDF6F00FEF703 /* Model */,
+				0774F8FC1ADBE0D400FEF703 /* GetOnDemand */,
 				07930B0A1A1EA0F400FECA5C /* Images.xcassets */,
 				07930B0C1A1EA0F400FECA5C /* LaunchScreen.xib */,
 				07930AFD1A1EA0F400FECA5C /* Supporting Files */,
@@ -263,14 +292,15 @@
 			files = (
 				07930B061A1EA0F400FECA5C /* ViewController.m in Sources */,
 				07930B031A1EA0F400FECA5C /* AppDelegate.m in Sources */,
-				07F6BCF61A25DEB600EDD044 /* LiveStreamBasketballGamesTVC.m in Sources */,
+				07F6BCF61A25DEB600EDD044 /* GetLiveTableViewController.m in Sources */,
 				0741946E1AC3168F00D1B2F4 /* OnDemandDatePicker.m in Sources */,
 				07F6BCFD1A2723AD00EDD044 /* GameInfoTableViewCell.m in Sources */,
-				07F6BCF91A26B5FC00EDD044 /* LiveGameVC.m in Sources */,
-				07F6BCEA1A2022C900EDD044 /* BasketballGamesTVC.m in Sources */,
-				07F6BCF31A22D89000EDD044 /* GameDetailViewController.m in Sources */,
+				07F6BCF91A26B5FC00EDD044 /* GetLiveViewController.m in Sources */,
+				07F6BCEA1A2022C900EDD044 /* GetOnDemandTableViewController.m in Sources */,
+				07F6BCF31A22D89000EDD044 /* GetOnDemandStreamViewController.m in Sources */,
 				074194711AC3179C00D1B2F4 /* DatePickerViewController.m in Sources */,
 				07930B001A1EA0F400FECA5C /* main.m in Sources */,
+				0774F8F91ADA55B000FEF703 /* BallstreamsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  BasketballGamesTVC.h
+//  GetOnDemandTableViewController.h
 //  Ballstreams
 //
 //  Created by Omar Basrawi on 11/21/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BasketballGamesTVC : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface GetOnDemandTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic) NSString *twoOnDemandDate;
 

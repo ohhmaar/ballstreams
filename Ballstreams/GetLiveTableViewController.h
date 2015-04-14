@@ -1,5 +1,5 @@
 //
-//  LiveStreamBasketballGamesTVC.h
+//  GetLiveTableViewController.h
 //  Ballstreams
 //
 //  Created by Omar Basrawi on 11/26/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LiveStreamBasketballGamesTVC : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface GetLiveTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

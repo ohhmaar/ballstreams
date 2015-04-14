@@ -1,5 +1,5 @@
 //
-//  LiveGameVC.h
+//  GetLiveViewController.h
 //  Ballstreams
 //
 //  Created by Omar Basrawi on 11/26/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LiveGameVC : UIViewController
+@interface GetLiveViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *homeScoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *awayScoreLabel;

@@ -7,7 +7,7 @@
 //
 
 #import "GameInfoTableViewCell.h"
-#import "LiveStreamBasketballGamesTVC.h"
+#import "GetLiveTableViewController.h"
 
 @implementation GameInfoTableViewCell
 

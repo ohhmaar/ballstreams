@@ -7,7 +7,7 @@
 //
 
 #import "DatePickerViewController.h"
-#import "BasketballGamesTVC.h"
+#import "GetOnDemandTableViewController.h"
 
 @interface DatePickerViewController ()
 
@@ -67,7 +67,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:@"demandSegue"]) {
-        BasketballGamesTVC *onDemandTVC = [segue destinationViewController];
+        GetOnDemandTableViewController *onDemandTVC = [segue destinationViewController];
         [onDemandTVC setTwoOnDemandDate:self.onDemandDate];
     }
 }

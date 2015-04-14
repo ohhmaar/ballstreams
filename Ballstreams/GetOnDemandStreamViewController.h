@@ -1,5 +1,5 @@
 //
-//  GameDetailViewController.h
+//  GetOnDemandStreamViewController.h
 //  Ballstreams
 //
 //  Created by Omar Basrawi on 11/23/14.
@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GameDetailViewController : UIViewController
+@interface GetOnDemandStreamViewController : UIViewController
+
+
 - (IBAction)playGame:(id)sender;
 @property (nonatomic, strong) NSString *streamID;
+
+
 @end
