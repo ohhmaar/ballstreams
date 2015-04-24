@@ -35,6 +35,9 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(getLive:) forControlEvents:UIControlEventValueChanged];
+    [self.tableView insertSubview:self.refreshControl atIndex:0];
     
     
     NSDate *date = [[NSDate alloc] init];
@@ -44,9 +47,21 @@
     
     formattedDate = [dateFormatter stringFromDate:date];
 }
-
+- (void)getLive:(UIRefreshControl *)sender {
+    
+    [BallstreamsModel GetLive:[NSString stringWithFormat:@"%@", formattedDate]  api:@"Wkp6S0d3b0xMQTU2MzVNR0xjVTNOeUxzQzRSZ1VSQm5Ga3Z4MldOV0lXVUJoS09tb1VQdzlXTkt2QlhEMlJkeloxV3Uvb051OGlRUmUzOFU3c0MwWEJEK21CM1I1N3ZOaGVEa2FBRXd4UGU5eDM1UTM0WE1pN3B5cEZKcW5ZaFE=" completionHandler:^(NSDictionary *jsonResults) {
+        
+        liveGames = jsonResults[@"schedule"];
+        
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+        [self.refreshControl endRefreshing];
+    }];
+}
 - (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:YES];
+    [super viewWillAppear:NO];
     
     [BallstreamsModel GetLive:[NSString stringWithFormat:@"%@", formattedDate]  api:@"Wkp6S0d3b0xMQTU2MzVNR0xjVTNOeUxzQzRSZ1VSQm5Ga3Z4MldOV0lXVUJoS09tb1VQdzlXTkt2QlhEMlJkeloxV3Uvb051OGlRUmUzOFU3c0MwWEJEK21CM1I1N3ZOaGVEa2FBRXd4UGU5eDM1UTM0WE1pN3B5cEZKcW5ZaFE=" completionHandler:^(NSDictionary *jsonResults) {
         
@@ -106,6 +121,10 @@
     }
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
