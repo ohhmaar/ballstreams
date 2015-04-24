@@ -10,4 +10,6 @@
 
 @interface GetLiveTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
+
 @end
